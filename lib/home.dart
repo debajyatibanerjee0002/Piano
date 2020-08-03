@@ -94,8 +94,10 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
+        // create a Stack
         child: Stack(
           children: <Widget>[
+            // create a column and then call the switchs
             Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
@@ -115,8 +117,10 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 5),
               ],
             ),
+            // create align to give the (black) switch position
             Align(
               alignment: Alignment.topRight,
+              // create a column and then call the switchs
               child: Column(
                 children: <Widget>[
                   SizedBox(height: 60),

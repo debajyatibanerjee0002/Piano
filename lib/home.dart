@@ -1,14 +1,19 @@
+// 2
 import 'package:flutter/material.dart';
+// import the audio_cache file
 import 'package:audioplayers/audio_cache.dart';
 
 class HomePage extends StatelessWidget {
+  // create an AudioCache class object
   final player = AudioCache();
 
+  // create a playsound method
   void playSound(int soundNumber) {
-    final player = AudioCache();
+    // final player = AudioCache();
     player.play('sound$soundNumber.mp3');
   }
 
+  // create Key methode...I mean switch(white)
   Expanded buildKey({int soundNumber, String data}) {
     return Expanded(
       child: Container(
@@ -46,6 +51,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  // create Key methode...I mean switch(black)
   buildkey2({int soundNumber, String data}) {
     return Container(
       height: 50,
